@@ -1,1 +1,10 @@
-
+SELECT - Extracts data from the database
+NULL - data value is missing or unknown
+JOIN - combine data from two or more tables
+  Inner JOIN - returns all rows that match the indicated condition from both tables.
+  Left JOIN - returns all rows from the left table with matching values from the right table. If one of the rows has no matching values in the right table, NULL will appear.
+  Right JOIN - returns the same result as above only the other way around. The result will be all the rows on the right table with matching values from the left table, along with NULL where there is no match.
+  Full JOIN - returns all the rows from both tables.
+  Cross JOIN - returns all the combinations of rows from both tables.
+WHERE - filter records or fulfill a specified condition
+FROM - what table to capture data from
