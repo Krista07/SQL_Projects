@@ -8,3 +8,4 @@ JOIN - combine data from two or more tables
   Cross JOIN - returns all the combinations of rows from both tables.
 WHERE - filter records or fulfill a specified condition
 FROM - what table to capture data from
+LIMIT - an operator that is used to limit the amount of rows or users
