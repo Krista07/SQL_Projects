@@ -9,3 +9,5 @@ JOIN - combine data from two or more tables
 WHERE - filter records or fulfill a specified condition
 FROM - what table to capture data from
 LIMIT - an operator that is used to limit the amount of rows or users
+COUNT - total of n in row/column you need/want
+COUNT DISTINCT - total of n row/column you need/want while excluding repeating or like information
