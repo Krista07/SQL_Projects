@@ -1,8 +1,19 @@
 #This code is based on CDC health data for Drug Overdoses, beginning from 2015 to current.
 #Link to data: https://data.cdc.gov/NCHS/VSRR-Provisional-Drug-Overdose-Death-Counts/xkb8-kh2a
 
+#Column Names:
+#State Name: The name of the State
+#Year: The year the data was taken from
+#Month: The month the overdose occured in
+#Indicator: The type of drug that was overdosed on
+
+
 #This data was processed using phpMyAdmin/MYSQL on my own personal server
 
 #This query will tell you how many drug overdoses occured based on the State, year, and month.
 SELECT `State Name`,`Year`,`Month`,`Indicator`, COUNT(`Indicator`) FROM `vsrr_provisional_drug_overdose_death_counts`
 GROUP BY `Indicator`;
+
+#This query will filter by indicator and State with the total death(s) for each indicator type
+SELECT `State Name`,`Year`,`Indicator`, COUNT(`Indicator`) FROM `vsrr_provisional_drug_overdose_death_counts`
+GROUP BY `Indicator`, `State Name`;
