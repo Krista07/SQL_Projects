@@ -1,0 +1,9 @@
+-- This is related to a dataset from Gas.
+-- I have my own server that is called phpMyAdmin and it's using MariaDB. Some syntax maybe different depending on your DB.
+
+-- Count all rows in the file
+SELECT COUNT(Gas_Station) FROM `Gas`;
+
+-- Count the total Gas stations by company name
+SELECT Gas_Station, COUNT(*) AS 'Total' FROM `Gas` GROUP BY Gas_Station;
+
