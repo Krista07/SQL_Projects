@@ -4,6 +4,8 @@
 -- Count all rows in the file
 SELECT COUNT(Gas_Station) FROM `Gas`;
 
--- Count the total Gas stations by company name
+-- Count the total Gas stations by company name. This is also creating a new column titled Total
 SELECT Gas_Station, COUNT(*) AS 'Total' FROM `Gas` GROUP BY Gas_Station;
 
+-- Ordering by ASC order
+SELECT Gas_Station, COUNT(*) AS 'Total' FROM `Gas` GROUP BY Gas_Station ORDER BY Total Asc;
