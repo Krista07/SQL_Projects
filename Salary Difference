@@ -1,0 +1,35 @@
+create table employees (
+  id int,
+  first_name varchar(25),
+  salary int,
+  department_id int
+  );
+INSERT INTO employees(id, first_name, salary, department_id)
+VALUES (1, 'ale', '80000', 10),
+(2, 'dan', '90000', 10),
+(3, 'melissa', '100000', 20),
+(4, 'oscar', '95000', 20),
+(5, 'cheri', '120000', 10),
+(6, 'larry', '115000', 10),
+(7, 'lej', '70000', 30),
+(8, 'angela', '105000', 30),
+(9, 'tamara', '100000', 30),
+(10, 'jayson', '110000', 20),
+(11, 'bob', '60000', 20);
+create table departments (
+  id int,
+  name varchar(25)
+  );
+INSERT INTO departments(id, name)
+VALUES (10, 'sales'),
+(20, 'marketing'),
+(30, 'engineering');
+
+Question: 
+-- Write a query that calculates the 
+-- difference between the highest salaries 
+-- found in the marketing and engineering 
+-- departments. 
+-- Output just the absolute difference in salaries.
+
+Output:
