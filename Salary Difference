@@ -33,3 +33,32 @@ Question:
 -- Output just the absolute difference in salaries.
 
 Output:
+-- Creating the overview and combining both datasets
+select employees.id, employees.first_name, employees.salary, employees.department_id, departments.name
+from employees
+	join departments
+	on employees.department_id = departments.id;
+
+-- Sorting salary by desc
+select employees.id, employees.first_name, employees.salary, employees.department_id, departments.name
+from employees
+	join departments
+	on employees.department_id = departments.id
+    order by employees.salary desc;
+
+-- Finding the marketing salary
+select employees.id, employees.first_name, employees.salary, employees.department_id, departments.name
+from employees
+	join departments
+	on employees.department_id = departments.id
+    where departments.name ='marketing'
+    order by employees.salary desc;
+
+-- Finding the engineering salary
+select employees.id, employees.first_name, employees.salary, employees.department_id, departments.name
+from employees
+	join departments
+	on employees.department_id = departments.id
+    where departments.name ='engineering'
+    order by employees.salary desc;
+
